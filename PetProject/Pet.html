@@ -1,0 +1,503 @@
+<html>
+<head>
+<script type="text/javascript">
+function mood(){
+  document.getElementById('mood').src="Pics/Normal.jpg"
+  document.getElementById('description').innerHTML="HEY! I am your very own pet squirrel."
+  t1=setTimeout(mood1, 6000)
+  t2=setTimeout(mood2, 15000)
+  t3=setTimeout(mood3, 20000)
+  t4=setTimeout(mood4, 23000)
+}
+function mood1(){
+  var x = Math.floor(Math.random()*5)
+  if(x==0){document.getElementById('mood').src="Pics/Sad.jpg"
+document.getElementById('description').innerHTML="Hey, I am sad because you are not playing with me!"}
+
+ else if(x==1){
+   document.getElementById('mood').src="Pics/Angry2.jpg"
+   document.getElementById('description').innerHTML="Play with me I am Angry and this is just the start of how I react"
+ }
+ else if(x==2){
+   document.getElementById('mood').src="Pics/Hungry.jpg"
+   document.getElementById('description').innerHTML="Since you aren't ineterested in interacting with me at least feed me."
+ }
+ else if(x==3){
+   document.getElementById('mood').src="Pics/sleepysquirrel.jpg"
+   document.getElementById('description').innerHTML="I am sleepy now because you aren't interacting with me"
+ }
+ else if(x==4){
+   document.getElementById('mood').src="Pics/Bored.jpg"
+   document.getElementById('description').innerHTML="I am bored. You aren't interacting with me!!"
+ }
+}
+function mood2(){
+  var x1= Math.floor(Math.random()*3)
+  if(x1==0){
+    document.getElementById('mood').src="Pics/Angry.jpg"
+    document.getElementById('description').innerHTML="I am very angry at you right now"
+  }
+  else if(x1==1){
+    document.getElementById('mood').src="Pics/Youthere.jpg"
+    document.getElementById('description').innerHTML="You there ?"
+  }
+  else if(x1==2){
+    document.getElementById('mood').src="Pics/mewhenangry.jpg"
+    document.getElementById('description').innerHTML="This will be you if you do not interact with me"
+  }
+}
+function mood3(){
+    document.getElementById('mood').src="Pics/leaving.jpg"
+    document.getElementById('description').innerHTML="I am very sad here I am leaving since you clearly don't want to play with me :("
+}
+function mood4(){
+  document.getElementById('mood').src="Pics/left.png"
+  document.getElementById('description').innerHTML="Your pet has left you. In order to bring it back, press any of the buttons on your screen"
+}
+
+function changeMoodByFood(){
+  var x2= Math.floor(Math.random()*6)
+
+  if(x2==0){
+    t5=setTimeout(response, 100)
+    t6=setTimeout(response1,3000)
+
+    function response(){document.getElementById('mood').src="Pics/happy.jpg"; document.getElementById('description').innerHTML="I am so happy now that I have something in my stomach"}
+    function response1(){document.getElementById('mood').src="Pics/Happy1.jpg"; document.getElementById('descripton').innerHTML="I am so happy now that I have something in my stomach"}
+  }
+  else if(x2==1){
+    t5=setTimeout(response2, 100)
+    t6=setTimeout(response3, 3000)
+
+    function response2(){document.getElementById('mood').src="Pics/angry2.jpg"; document.getElementById('description').innerHTML="I feel angry at you right now for taking so long before feeding me"}
+    function response3(){document.getElementById('mood').src="Pics/Angry.jpg"; document.getElementById('description').innerHTML="I am getting angrier with every passing second, you better play with me now"}
+  }
+  else if(x2==2){
+    t5=setTimeout(response4, 100)
+    t6=setTimeout(response5, 3000)
+
+    function response4(){document.getElementById('mood').src="Pics/Sleepy.jpg"; document.getElementById('description').innerHTML="I am sleepy after so much food"}
+    function response5(){document.getElementById('mood').src="Pics/sleepysquirrel.jpg"; document.getElementById('description').innerHTML="What are you waiting for? Tuck me in now"}
+  }
+  else if(x2==3){
+    t5=setTimeout(response6, 100)
+    t6=setTimeout(response11, 3000)
+
+    function response6(){document.getElementById('mood').src="Pics/Bored.jpg"; document.getElementById('description').innerHTML="After eating so much I am so bored"}
+    function response11(){document.getElementById('mood').src="Pics/bored2.jpg"; document.getElementById('description').innerHTML="I am very bored, help"}
+  }
+  else if(x2==4){
+    t5=setTimeout(response7, 100)
+    t6=setTimeout(response8, 3000)
+
+    function response7(){document.getElementById('mood').src="Pics/dirty.jpeg"; document.getElementById('description').innerHTML="What was that ? I have something on my nose? Interesting"}
+    function response8(){document.getElementById('mood').src="Pics/dirty.jpg"; document.getElementById('description').innerHTML="I know I have something on my nose right? Don't worry just keep giving food"}
+  }
+  else if(x2==5){
+    t5=setTimeout(response9, 100)
+    t6=setTimeout(response10, 3000)
+
+    function response9(){document.getElementById('mood').src="Pics/Hungry.jpg"; document.getElementById('description').innerHTML="I am still hungry after all that food"}
+    function response10(){document.getElementById('mood').src="Pics/hungry2.jpg"; document.getElementById('description').innerHTML="Can You Please give me more food?"}
+  }
+}
+function nut(){
+  clearTimeout(t0)
+  clearTimeout(t1)
+  clearTimeout(t2)
+  clearTimeout(t3)
+  clearTimeout(t4)
+
+  setTimeout(nut1, 100)
+  setTimeout(nut2, 3000)
+  setTimeout(changeMoodByFood, 5000)
+}
+  function nut1(){
+    document.getElementById('mood').src="Pics/Buryseeds.jpg"
+    document.getElementById('description').innerHTML="Thanks for DEEZ NUTS"
+  }
+  function nut2(){
+    document.getElementById('mood').src="Pics/Thanksforthefood.jpg"
+    document.getElementById('description').innerHTML="I have a lot of food now. Thank You!!"
+  }
+  function corn(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(corn1, 100)
+    setTimeout(corn2, 3000)
+    setTimeout(changeMoodByFood, 5000)
+  }
+  function corn1(){
+    document.getElementById('mood').src="Pics/squirrelveges.jpg"
+    document.getElementById('description').innerHTML="Thanks for da corn"
+  }
+  function corn2(){
+    document.getElementById('mood').src="Pics/corn.jpg"
+    document.getElementById('description').innerHTML="I have a lot of food now. Thank You!!"
+  }
+  function cheese(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(cheese1, 100)
+    setTimeout(cheese2, 3000)
+    setTimeout(changeMoodByFood, 5000)
+  }
+  function cheese1(){
+    document.getElementById('mood').src="Pics/cheese.jpg"
+    document.getElementById('description').innerHTML="I love cheese"
+  }
+  function cheese2(){
+    document.getElementById('mood').src="Pics/cheese.png"
+    document.getElementById('description').innerHTML="I have a lot of food now. Thank You!!"
+  }
+  function changeMoodByAct(){
+    var x3= Math.floor(Math.random()*6)
+
+    if(x3==0){
+      t15=setTimeout(response, 100)
+      t16=setTimeout(response1,3000)
+      function response(){document.getElementById('mood').src="Pics/happy.jpg"; document.getElementById('description').innerHTML="I am so happy now that I have done something in my day"}
+      function response1(){document.getElementById('mood').src="Pics/Happy1.jpg"; document.getElementById('description').innerHTML="I feel on top of the world"}
+    }
+    else if(x3==1){
+      t15=setTimeout(response2, 100)
+      t16=setTimeout(response3, 3000)
+
+      function response2(){document.getElementById('mood').src="Pics/angry2.jpg"; document.getElementById('description').innerHTML="I feel angry at you right now for making me do all of these energy buning activities"}
+      function response3(){document.getElementById('mood').src="Pics/Angry.jpg"; document.getElementById('description').innerHTML="Give me my energy back by putting me to bed, or else...."}
+    }
+    else if(x3==2){
+      t15=setTimeout(response4, 100)
+      t16=setTimeout(response5, 3000)
+
+      function response4(){document.getElementById('mood').src="Pics/Sleepy.jpg"; document.getElementById('description').innerHTML="I am sleepy after so much energy burning"}
+      function response5(){document.getElementById('mood').src="Pics/sleepysquirrel.jpg"; document.getElementById('description').innerHTML="What are you waiting for? Tuck me in now"}
+    }
+    else if(x3==3){
+      t15=setTimeout(response6, 100)
+      t16=setTimeout(response11, 3000)
+
+      function response6(){document.getElementById('mood').src="Pics/Bored.jpg"; document.getElementById('description').innerHTML="After doing so much I am still bored, play a different activity"}
+      function response11(){document.getElementById('mood').src="Pics/bored2.jpg"; document.getElementById('description').innerHTML="I am very bored, help. DO SOMETHING"}
+    }
+    else if(x3==4){
+      t15=setTimeout(response7, 100)
+      t16=setTimeout(response8, 3000)
+
+      function response7(){document.getElementById('mood').src="Pics/dirty.jpeg"; document.getElementById('description').innerHTML="I know I look bad. I fell down while playing"}
+      function response8(){document.getElementById('mood').src="Pics/dirty.jpg"; document.getElementById('description').innerHTML="I don't need to be cleaned, I am an animal I clean myself"}
+    }
+    else if(x3==5){
+      t15=setTimeout(response9, 100)
+      t16=setTimeout(response10, 3000)
+
+      function response9(){document.getElementById('mood').src="Pics/Hungry.jpg"; document.getElementById('description').innerHTML="I am so hungry after all that activitiy"}
+      function response10(){document.getElementById('mood').src="Pics/hungry2.jpg"; document.getElementById('description').innerHTML="Can You Please give me some food?"}
+    }
+  }
+  function gym(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(gym1, 100)
+    setTimeout(gym2, 3000)
+    setTimeout(changeMoodByAct, 5000)
+  }
+  function gym1(){
+    document.getElementById('mood').src="Pics/karateclass.jpg"
+    document.getElementById('description').innerHTML="I know karate now !"
+  }
+  function gym2(){
+    document.getElementById('mood').src="Pics/gymmeme.jpg"
+    document.getElementById('description').innerHTML="The picture says it all"
+  }
+  function jenga(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(jenga1, 100)
+    setTimeout(jenga2, 3000)
+    setTimeout(changeMoodByAct, 5000)
+  }
+  function jenga1(){
+    document.getElementById('mood').src="Pics/jhengaplay.jpg"
+    document.getElementById('description').innerHTML="Sure, if that is what you're into"
+  }
+  function jenga2(){
+    document.getElementById('mood').src="Pics/jenga.jpg"
+    document.getElementById('description').innerHTML="Oopsie! I dropped it"
+  }
+  function guitar(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(guitar1, 100)
+    setTimeout(guitar2, 3000)
+    setTimeout(changeMoodByAct, 5000)
+  }
+  function guitar1(){
+    document.getElementById('mood').src="Pics/guitar.jpg"
+    document.getElementById('description').innerHTML="Na nnnanana nananna"
+  }
+  function guitar2(){
+    document.getElementById('mood').src="Pics/music.jpg"
+    document.getElementById('description').innerHTML="La la la la"
+  }
+  function park(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(park1, 100)
+    setTimeout(park2, 3000)
+    setTimeout(park3, 6000)
+    setTimeout(changeMoodByAct, 7500)
+  }
+  function park1(){
+    document.getElementById('mood').src="Pics/playing.jpeg"
+    document.getElementById('description').innerHTML="I think I forgot to tell you that I trained LeBron James"
+  }
+  function park2(){
+    document.getElementById('mood').src="Pics/park.gif"
+    document.getElementById('description').innerHTML="What am I doing? I am just having fun"
+  }
+  function park3(){
+    document.getElementById('mood').src="Pics/park2.gif"
+    document.getElementById('description').innerHTML="What am I doing? I am just having fun"
+  }
+  function petting(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(petting1, 100)
+    setTimeout(changeMoodByPet, 5000)
+  }
+  function petting1(){
+    document.getElementById('mood').src="Pics/petting.gif"
+    document.getElementById('description').innerHTML="I like this <3"
+  }
+  function changeMoodByPet(){
+    var x3= Math.floor(Math.random()*4)
+
+    if(x3==0){
+      t15=setTimeout(response, 100)
+      t16=setTimeout(response1,3000)
+      function response(){document.getElementById('mood').src="Pics/happy.jpg"; document.getElementById('description').innerHTML="I am so happy because you were petting me"}
+      function response1(){document.getElementById('mood').src="Pics/Happy1.jpg"; document.getElementById('description').innerHTML="I feel on top of the world and I am so happy "}
+    }
+    else if(x3==1){
+      t15=setTimeout(response4, 100)
+      t16=setTimeout(response5, 3000)
+
+      function response4(){document.getElementById('mood').src="Pics/Sleepy.jpg"; document.getElementById('description').innerHTML="I am sleepy after so much of petting"}
+      function response5(){document.getElementById('mood').src="Pics/sleepysquirrel.jpg"; document.getElementById('description').innerHTML="Please Tuck me in now"}
+    }
+    else if(x3==2){
+      t15=setTimeout(response7, 100)
+      t16=setTimeout(response8, 3000)
+
+      function response7(){document.getElementById('mood').src="Pics/dirty.jpeg"; document.getElementById('description').innerHTML="See your dirty hands made me dirty"}
+      function response8(){document.getElementById('mood').src="Pics/dirty.jpg"; document.getElementById('description').innerHTML="But, do not worry about cleaning me, I am an animal I clean myself"}
+    }
+    else if(x3==3){
+      t15=setTimeout(response9, 100)
+      t16=setTimeout(response10, 3000)
+
+      function response9(){document.getElementById('mood').src="Pics/Hungry.jpg"; document.getElementById('description').innerHTML="I am so hungry after all that physical contact"}
+      function response10(){document.getElementById('mood').src="Pics/hungry2.jpg"; document.getElementById('description').innerHTML="Can You Please give me some food? I am really hungry"}
+    }
+  }
+  function bed(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(bed1, 100)
+    setTimeout(bed2, 3000)
+    setTimeout(changeMoodByBed, 6000)
+  }
+  function bed1(){
+    document.getElementById('mood').src="Pics/bed.jpg"
+    document.getElementById('description').innerHTML="So comfy"
+  }
+  function bed2(){
+    document.getElementById('mood').src="Pics/bed2.jpg"
+    document.getElementById('description').innerHTML="Thanks for tucking me in :)"
+  }
+  function changeMoodByBed(){
+    var x4= Math.floor(Math.random()*4)
+
+    if(x4==0){
+      t15=setTimeout(response, 100)
+      t16=setTimeout(response1,3000)
+      function response(){document.getElementById('mood').src="Pics/happy.jpg"; document.getElementById('description').innerHTML="I got my 8 hours, so happy "}
+      function response1(){document.getElementById('mood').src="Pics/Happy1.jpg"; document.getElementById('description').innerHTML="I feel on top of the world and I am so happy "}
+    }
+    else if(x4==1){
+      t15=setTimeout(response4, 100)
+      t16=setTimeout(response5, 3000)
+
+      function response4(){document.getElementById('mood').src="Pics/Sleepy.jpg"; document.getElementById('description').innerHTML="I am still sleepy"}
+      function response5(){document.getElementById('mood').src="Pics/sleepysquirrel.jpg"; document.getElementById('description').innerHTML="Please Let Me sleep for some more time"}
+    }
+    else if(x4==2){
+      t15=setTimeout(response7, 100)
+      t16=setTimeout(response8, 3000)
+
+      function response7(){document.getElementById('mood').src="Pics/Bored.jpg"; document.getElementById('description').innerHTML="I am bored"}
+      function response8(){document.getElementById('mood').src="Pics/bored2.jpg"; document.getElementById('description').innerHTML="I know I just woke up but I am so bored"}
+    }
+    else if(x4==3){
+      t15=setTimeout(response9, 100)
+      t16=setTimeout(response10, 3000)
+
+      function response9(){document.getElementById('mood').src="Pics/Hungry.jpg"; document.getElementById('description').innerHTML="I am so hungry"}
+      function response10(){document.getElementById('mood').src="Pics/hungry2.jpg"; document.getElementById('description').innerHTML="Can I please have an after nap meal, please"}
+    }
+  }
+  function coffee(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+
+    setTimeout(coffee1, 100)
+    setTimeout(coffee2, 3000)
+    setTimeout(changeMoodByCoffee, 6000)
+  }
+  function coffee1(){
+    document.getElementById('mood').src="Pics/burnt.jpg"
+    document.getElementById('description').innerHTML="Oopsie! Burnt myself :0"
+  }
+  function coffee2(){
+    document.getElementById('mood').src="Pics/coffee.jpeg"
+    document.getElementById('description').innerHTML="Do Not Laugh, Please"
+  }
+  function changeMoodByCoffee(){
+    var x4= Math.floor(Math.random()*4)
+
+    if(x4==0){
+      t15=setTimeout(response, 100)
+      t16=setTimeout(response1,3000)
+      function response(){document.getElementById('mood').src="Pics/happy.jpg"; document.getElementById('description').innerHTML="I got my coffee, so happy "}
+      function response1(){document.getElementById('mood').src="Pics/Happy1.jpg"; document.getElementById('description').innerHTML="I feel on top of the world and I am so happy "}
+    }
+    else if(x4==1){
+      t15=setTimeout(response4, 100)
+      t16=setTimeout(response5, 3000)
+
+      function response4(){document.getElementById('mood').src="Pics/Sleepy.jpg"; document.getElementById('description').innerHTML="I am sleepy after drinking this coffee"}
+      function response5(){document.getElementById('mood').src="Pics/sleepysquirrel.jpg"; document.getElementById('description').innerHTML="Are you sure you gave me coffee? Because I am very sleepy"}
+    }
+    else if(x4==2){
+      t15=setTimeout(response7, 100)
+      t16=setTimeout(response8, 3000)
+
+      function response7(){document.getElementById('mood').src="Pics/Bored.jpg"; document.getElementById('description').innerHTML="The caffiene did not do much, I am bored"}
+      function response8(){document.getElementById('mood').src="Pics/bored2.jpg"; document.getElementById('description').innerHTML="The caffiene did not do much, I am bored"}
+    }
+    else if(x4==3){
+      t15=setTimeout(response9, 100)
+      t16=setTimeout(response10, 3000)
+
+      function response9(){document.getElementById('mood').src="Pics/Hungry.jpg"; document.getElementById('description').innerHTML="I am so hungry now"}
+      function response10(){document.getElementById('mood').src="Pics/hungry2.jpg"; document.getElementById('description').innerHTML="Can I please have a coffee snack?"}
+    }
+  }
+  function transform(){
+    clearTimeout(t0)
+    clearTimeout(t1)
+    clearTimeout(t2)
+    clearTimeout(t3)
+    clearTimeout(t4)
+    var x5=Math.floor(Math.random()*10)
+    if(x5<6){alert("Not the time to transform")}
+    else{  setTimeout(transform1, 100)
+    setTimeout(transform2, 3500)
+    setTimeout(transform3, 6000)
+    setTimeout(changeMoodByAct, 7000)
+  }
+  }
+  function transform1(){document.getElementById('mood').src="Pics/transform.jpg"; document.getElementById('description').innerHTML="IT IS TIME FOR NUTman"}
+  function transform2(){document.getElementById('mood').src="Pics/superhero.jpg"; document.getElementById('description').innerHTML="Time to save the city"}
+  function transform3(){document.getElementById('mood').src="Pics/Normal.jpg"; document.getElementById('description').innerHTML="I am back"}
+</script>
+<style>
+input[type=image]{
+  height: 60px;
+  width: 60px;
+}
+img{
+  height: 575px;
+  width: 650px;
+}
+h2{
+  font-family: "Comic Sans MS";
+}
+pre{
+  font-family: "Times";
+  font-size: 18px;
+}
+body{
+  background-color: #f6f5c7;
+}
+td{font-weight: bold;
+font-family: "Verdana";
+font-size: 16px;}
+p{font-weight: bold;
+font-size: 20px;
+font-family: "Lucida Console"}
+</style>
+</head>
+<body onload="t0=setTimeout(mood(), 10)">
+  <center><h2><s>Virtual Pet</s> ReAl PeT</h2><center>
+  <center><pre id="intro">While interacting with your pet remember that its emotions keep getting amplified the longer you take to interact with it.
+  Beware! Your Pet is very Moody. It likes to show how each activity went which takes time.
+   Give it some time to stabilize and then press the next button.(Each picture represents an action)
+  Psst! Do Not call it virtual. See the scratch up there on the previous head line. Yeah he did that and then wrote the new heading with his own bare claws.</pre>
+  <table cellspacing="30">
+    <tr><td>Food</td><td>Coffee</td><td rowspan="6"><img src="" id="mood"></center></td><td>Activities</td><td>Bed</td></tr>
+    <tr><td><input type="image" id="nut" src="Icons/nut.png" onclick="nut()"></td>
+      <td><input type="image" id="coffee" src="Icons/coffee.jpg" onclick="coffee()"></td>
+      <td><input type="image" id="gym" src="Icons/dumbell.jpg" onclick="gym()"></td>
+      <td><input type="image" id="bed" src="Icons/bedicon.png" onclick="bed()"></td></tr>
+  <tr><td><input type="image" id="corn" src="Icons/corn.jpeg" onclick="corn()"></td>
+    <td><input type="button" onClick="transform()" value="TRANSFORM"></td>
+    <td><input type="image" id="jenga" src="Icons/jenga.jpeg" onclick="jenga()"></td>
+    <td>Petting</td></tr>
+  <tr><td><input type="image" id="cheese" src="Icons/cheese.gif" onclick="cheese()"></td>
+    <td></td>
+    <td><input type="image" id="guitar" src="Icons/guitar.jpg" onclick="guitar()"></td>
+    <td><input type="image" id="petting" src="Icons/Petting.jpg" onclick="petting()"></td></tr>
+  <tr><td></td><td></td><td><input type="image" id="park" src="Icons/Parkicon.jpg" onclick="park()"></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+  <tr><td colspan="5"><center><p id="description"></p><center></td></tr>
+  <tr><td></td> <td></td><td> <center><a href="documentation.html">Link to documentation</a></center></td></tr>
+</table>
+</body>
+</html>
